@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <form>
+            <h2>Step 1: Your details</h2>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="First and last name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="randomEmail@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="+996 000 000 000">
+            </div>
+
+            <h2>Step 2: Delivery address</h2>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="postcode">Post code</label>
+                <input type="text" id="postcode">
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" id="country">
+            </div>
+
+            <h2>Step 3: Card details</h2>
+            <div class="form-group">
+                <label for="cardtype">Card type</label>
+                <div class="card-options">
+                    <input type="radio" id="visa" name="cardtype">
+                    <label for="visa">VISA</label>
+                    <input type="radio" id="unionPay" name="cardtype">
+                    <label for="unionPay">Union pay</label>
+                    <input type="radio" id="mastercard" name="cardtype">
+                    <label for="mastercard">Mastercard</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cardnumber">Card number</label>
+                <input type="text" id="cardnumber">
+            </div>
+            <div class="form-group">
+                <label for="securitycode">Security code</label>
+                <input type="text" id="securitycode">
+            </div>
+            <div class="form-group">
+                <label for="nameoncard">Name on card</label>
+                <input type="text" id="nameoncard" placeholder="Exact name as on the card">
+            </div>
+
+            <button type="submit">BUY IT!</button>
+        </form>
+    </div>
+</body>
+
+</html>
