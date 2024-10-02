@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    width: 400px;
+}
+
+.button {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button:nth-child(1) {
+    background: linear-gradient(to bottom, #d50000, #a00000);
+}
+
+.button:nth-child(2) {
+    background: linear-gradient(to bottom, #6200ea, #3700b3);
+}
+
+.button:nth-child(3) {
+    background: linear-gradient(to bottom, #6200ea, #3700b3);
+}
+
+.button:nth-child(4) {
+    background: linear-gradient(to bottom, #3f51b5, #1a237e);
+}
+
+.button:nth-child(5) {
+    background: linear-gradient(to bottom, #00bcd4, #00838f);
+}
+
+.button:nth-child(6) {
+    background: linear-gradient(to bottom, #4caf50, #388e3c);
+}
+
+.button:nth-child(7) {
+    background: linear-gradient(to bottom, #cddc39, #aeea00);
+}
+
+.button:nth-child(8) {
+    background: linear-gradient(to bottom, #ffeb3b, #fbc02d);
+}
+
+.button:nth-child(9) {
+    background: linear-gradient(to bottom, #ff9800, #f57c00);
+}
+
+.button:nth-child(10) {
+    background: linear-gradient(to bottom, #f44336, #c62828);
+}
+
+.name{
+    color: white;
+    font-size: 30px;
+    padding-left: 30px;
+}
