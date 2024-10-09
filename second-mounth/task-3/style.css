@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff;
+}
+
+.color-changing-ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    animation: changeColor 3s infinite;
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: blue;
+    }
+
+    50% {
+        background-color: green;
+    }
+
+    75% {
+        background-color: yellow;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
