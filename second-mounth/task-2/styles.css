@@ -1,0 +1,300 @@
+/* гобщие стили */
+
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 36px;
+    color: orange;
+}
+
+.btn {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: darkorange;
+}
+
+footer {
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer p {
+    color: #333;
+}
+
+/* Хедер */
+.header_style {
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: orange;
+    border-bottom: 2px solid orange;
+}
+
+
+/* main.html */
+
+/* Стили для главной страницы */
+main {
+    flex-grow: 1;
+    background-color: #333;
+    padding: 50px 0;
+    color: white;
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.welcome-section h2 {
+    font-size: 36px;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* news.html */
+
+/* Стили для новостей */
+.news {
+    text-align: center;
+}
+
+.news h2 {
+    font-size: 36px;
+    color: orange;
+}
+
+.news-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.news-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.news-card h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+.news-card p {
+    margin: 15px 0;
+}
+
+/* contacts.html */
+
+/* Стили для страницы контактов */
+.contacts-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.contact-info {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+    padding-bottom: 70px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    width: 45%;
+}
+
+.contact-form h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    font-size: 16px;
+    color: #888;
+}
+
+form button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: darkorange;
+}
+
+/* gallery.html */
+
+/* Стили галереи */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+
+/* адаптивность */
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .contacts-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+    }
+}
