@@ -556,3 +556,131 @@ let totalDigitCount = countA12345 + countB6789;
 console.log(totalDigitCount);
 
 
+
+// лаб 81
+alert(true + 3);
+// answer 4
+
+
+// лаб 82
+alert(true + true);
+// answer 2
+
+
+// лаб 83
+alert(true - true);
+// answer 0
+
+
+// лаб 84
+alert(true + false);
+// answer 1
+
+
+// лаб 85
+alert('1' + true);
+// answer '1true'
+
+
+// лаб 86
+alert(String(true) + 1);
+// answer true1
+
+
+// лаб 87
+alert(String(true) + Number(true));
+// answer true1
+
+
+// лаб 88
+let boolTest = Boolean(42);
+alert(boolTest);
+// answer true
+
+
+
+// лаб 89
+let boolTest0 = Boolean(0);
+alert(boolTest0);
+// answer false
+
+
+
+// лаб 90
+let boolTestNeg1 = Boolean(-1);
+alert(boolTestNeg1);
+// answer true
+
+
+
+// лаб 91
+let boolTestNeg0 = Boolean(-0);
+alert(boolTestNeg0);
+// answer false
+
+
+
+// лаб 92
+let boolTestPlus0 = Boolean(+0);
+alert(boolTestPlus0);
+// answer false
+
+
+
+// лаб 93
+let boolTestStr = Boolean('hello');
+alert(boolTestStr);
+// answer true
+
+
+
+// лаб 94
+let boolTestEmpty = Boolean('');
+alert(boolTestEmpty);
+// answer false
+
+
+
+// лаб 95
+let boolTestZero = Boolean('0');
+alert(boolTestZero);
+// answer true
+
+
+
+// лаб 96
+let boolTestTrue = Boolean(true);
+alert(boolTestTrue);
+// answer true
+
+
+
+// лаб 97
+let boolTestFalse = Boolean(false);
+alert(boolTestFalse);
+// answer false
+
+
+
+// лаб 98
+let boolTestTrueStr = Boolean('true');
+alert(boolTestTrueStr);
+// answer true
+
+
+
+// лаб 99
+let boolTestFalseStr = Boolean('false');
+alert(boolTestFalseStr);
+// answer true
+
+
+
+// лаб 100
+let boolTestNull = Boolean(null);
+alert(boolTestNull);
+// answer false
+
+
+
+
