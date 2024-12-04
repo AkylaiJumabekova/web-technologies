@@ -1,1 +1,0 @@
-alert("das ist die Freizeit")

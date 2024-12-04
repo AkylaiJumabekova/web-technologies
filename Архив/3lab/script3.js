@@ -1,1 +1,0 @@
-alert("In der Freizeit konnen wir entspannen und machen, was uns gefahlt")
